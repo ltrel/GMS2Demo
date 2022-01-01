@@ -9,7 +9,6 @@
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"order":1,},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},"order":3,},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},"order":1,},
-    {"id":{"name":"scr_move_camera","path":"scripts/scr_move_camera/scr_move_camera.yy",},"order":0,},
     {"id":{"name":"rm_1","path":"rooms/rm_1/rm_1.yy",},"order":0,},
   ],
   "Options": [
