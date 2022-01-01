@@ -1,9 +1,3 @@
-/// @DnDAction : YoYo Games.Instances.Sprite_Rotate
-/// @DnDVersion : 1
-/// @DnDHash : 18485DEF
-/// @DnDArgument : "angle" "point_direction(x, y, mouse_x, mouse_y)"
-image_angle = point_direction(x, y, mouse_x, mouse_y);
-
 /// @DnDAction : YoYo Games.Common.Temp_Variable
 /// @DnDVersion : 1
 /// @DnDHash : 154820F6
@@ -89,7 +83,7 @@ if (l26A7A423_0)
 
 /// @DnDAction : YoYo Games.Movement.Set_Direction_Point
 /// @DnDVersion : 1
-/// @DnDHash : 0A3CB294
+/// @DnDHash : 07EEEECC
 /// @DnDArgument : "x" "h_move"
 /// @DnDArgument : "x_relative" "1"
 /// @DnDArgument : "y" "v_move"
@@ -102,22 +96,42 @@ direction = point_direction(x, y, x + h_move, y + v_move);
 /// @DnDArgument : "expr" "h_move != 0 || v_move != 0"
 if(h_move != 0 || v_move != 0)
 {
-	/// @DnDAction : YoYo Games.Movement.Set_Speed
+	/// @DnDAction : YoYo Games.Common.Execute_Code
 	/// @DnDVersion : 1
-	/// @DnDHash : 4D34253A
+	/// @DnDHash : 2128D0C8
 	/// @DnDParent : 1B5F5229
-	/// @DnDArgument : "speed" "move_speed"
-	speed = move_speed;
-}
-
-/// @DnDAction : YoYo Games.Common.Else
-/// @DnDVersion : 1
-/// @DnDHash : 78A5C588
-else
-{
-	/// @DnDAction : YoYo Games.Movement.Set_Speed
-	/// @DnDVersion : 1
-	/// @DnDHash : 4EEA103B
-	/// @DnDParent : 78A5C588
-	speed = 0;
+	/// @DnDArgument : "code" "// I swear this used to be easier...$(13_10)// Calculate where we want to move to$(13_10)var target_x = x + dcos(direction) * move_speed;$(13_10)var target_y = y + -dsin(direction) * move_speed;$(13_10)$(13_10)// Move there if possible$(13_10)if(place_free(target_x, target_y)){$(13_10)	x = target_x;$(13_10)	y = target_y;$(13_10)}$(13_10)$(13_10)// Otherwise move as close as possible along both axes$(13_10)else {$(13_10)	var x_distance = abs(target_x - x);$(13_10)	var y_distance = abs(target_y - y);$(13_10)$(13_10)	repeat(x_distance) {$(13_10)		if(place_free(x + sign(target_x - x), y)) {$(13_10)			x += sign(target_x - x);$(13_10)		}$(13_10)		else {$(13_10)			break;$(13_10)		}$(13_10)	}$(13_10)	repeat(y_distance) {$(13_10)		if(place_free(x, y + sign(target_y - y))) {$(13_10)			y += sign(target_y - y);$(13_10)		}$(13_10)		else {$(13_10)			break;$(13_10)		}$(13_10)	}$(13_10)}$(13_10)"
+	// I swear this used to be easier...
+	// Calculate where we want to move to
+	var target_x = x + dcos(direction) * move_speed;
+	var target_y = y + -dsin(direction) * move_speed;
+	
+	// Move there if possible
+	if(place_free(target_x, target_y)){
+		x = target_x;
+		y = target_y;
+	}
+	
+	// Otherwise move as close as possible along both axes
+	else {
+		var x_distance = abs(target_x - x);
+		var y_distance = abs(target_y - y);
+	
+		repeat(x_distance) {
+			if(place_free(x + sign(target_x - x), y)) {
+				x += sign(target_x - x);
+			}
+			else {
+				break;
+			}
+		}
+		repeat(y_distance) {
+			if(place_free(x, y + sign(target_y - y))) {
+				y += sign(target_y - y);
+			}
+			else {
+				break;
+			}
+		}
+	}
 }
