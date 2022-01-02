@@ -75,5 +75,13 @@ if(can_shoot)
 		/// @DnDParent : 2DD55FE6
 		/// @DnDArgument : "speed" "other.bullet_speed"
 		speed = other.bullet_speed;
+	
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 6742DCDE
+		/// @DnDParent : 2DD55FE6
+		/// @DnDArgument : "expr" "true"
+		/// @DnDArgument : "var" "from_player"
+		from_player = true;
 	}
 }
