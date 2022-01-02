@@ -38,15 +38,15 @@ if(can_dash && is_moving)
 	/// @DnDVersion : 1
 	/// @DnDHash : 29B8C75C
 	/// @DnDParent : 00BAF034
-	/// @DnDArgument : "steps" "20"
+	/// @DnDArgument : "steps" "dash_steps"
 	/// @DnDArgument : "alarm" "1"
-	alarm_set(1, 20);
+	alarm_set(1, dash_steps);
 
 	/// @DnDAction : YoYo Games.Instances.Set_Alarm
 	/// @DnDVersion : 1
 	/// @DnDHash : 39D6951E
 	/// @DnDParent : 00BAF034
-	/// @DnDArgument : "steps" "60"
+	/// @DnDArgument : "steps" "dash_timeout_steps"
 	/// @DnDArgument : "alarm" "2"
-	alarm_set(2, 60);
+	alarm_set(2, dash_timeout_steps);
 }
