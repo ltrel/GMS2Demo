@@ -16,8 +16,8 @@ if(can_shoot)
 	/// @DnDVersion : 1
 	/// @DnDHash : 4CD69AB4
 	/// @DnDParent : 51B05E81
-	/// @DnDArgument : "steps" "0.2*60"
-	alarm_set(0, 0.2*60);
+	/// @DnDArgument : "steps" "shoot_timeout_steps"
+	alarm_set(0, shoot_timeout_steps);
 
 	/// @DnDAction : YoYo Games.Audio.Play_Audio
 	/// @DnDVersion : 1

@@ -6,7 +6,7 @@
     "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_pathfinding",
+  "name": "scr_enemy_ai",
   "tags": [],
   "resourceType": "GMScript",
 }

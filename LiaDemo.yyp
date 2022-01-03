@@ -5,7 +5,7 @@
     {"id":{"name":"spr_crosshair","path":"sprites/spr_crosshair/spr_crosshair.yy",},"order":2,},
     {"id":{"name":"snd_shoot","path":"sounds/snd_shoot/snd_shoot.yy",},"order":0,},
     {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},"order":1,},
-    {"id":{"name":"scr_pathfinding","path":"scripts/scr_pathfinding/scr_pathfinding.yy",},"order":1,},
+    {"id":{"name":"scr_enemy_ai","path":"scripts/scr_enemy_ai/scr_enemy_ai.yy",},"order":1,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":4,},
     {"id":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},"order":4,},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"order":0,},

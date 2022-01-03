@@ -17,4 +17,10 @@ if(!(other.from_player))
 	/// @DnDApplyTo : other
 	/// @DnDParent : 59DBF7B8
 	with(other) instance_destroy();
+
+	/// @DnDAction : YoYo Games.Rooms.Restart_Room
+	/// @DnDVersion : 1
+	/// @DnDHash : 6C8262DC
+	/// @DnDParent : 59DBF7B8
+	room_restart();
 }
