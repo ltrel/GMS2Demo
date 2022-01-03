@@ -14,7 +14,7 @@ function player_visible() {
 	var wall_2_hit = collision_line(x, y, player.x, player.y, obj_wall_2, false, true);
 	var door_hit = collision_line(x, y, player.x, player.y, obj_door, false, true);
 	var closed_door_hit = door_hit && (!door_hit.is_open);
-	return !(wall_1_hit || wall_2_hit || closed_door_hit);
+	return !wall_1_hit && !wall_2_hit && !closed_door_hit;
 }
 
 // Returns whether the path was started
