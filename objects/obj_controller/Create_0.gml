@@ -7,6 +7,7 @@ var cell_size = 32;
 var columns = room_width / cell_size;
 var rows = room_height / cell_size;
 global.grid = mp_grid_create(0, 0, columns, rows, cell_size, cell_size);
-mp_grid_add_instances(global.grid, obj_wall, true);
+mp_grid_add_instances(global.grid, obj_wall_1, true);
+mp_grid_add_instances(global.grid, obj_wall_1, true);
 
 global.player_alive = true;
