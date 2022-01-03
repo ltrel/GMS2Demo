@@ -23,9 +23,9 @@ if(can_shoot)
 	/// @DnDVersion : 1
 	/// @DnDHash : 590C9414
 	/// @DnDParent : 51B05E81
-	/// @DnDArgument : "soundid" "snd_shoot"
-	/// @DnDSaveInfo : "soundid" "snd_shoot"
-	audio_play_sound(snd_shoot, 0, 0);
+	/// @DnDArgument : "soundid" "snd_player_shoot"
+	/// @DnDSaveInfo : "soundid" "snd_player_shoot"
+	audio_play_sound(snd_player_shoot, 0, 0);
 
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1

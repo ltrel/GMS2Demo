@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_dash.wav",
-  "duration": 0.193379,
+  "soundFile": "snd_enemy_shoot.wav",
+  "duration": 0.166032,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "snd_dash",
+  "name": "snd_enemy_shoot",
   "tags": [],
   "resourceType": "GMSound",
 }

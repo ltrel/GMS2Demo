@@ -29,9 +29,9 @@ if(can_shoot && player_visible())
 	/// @DnDVersion : 1
 	/// @DnDHash : 0ACD53F5
 	/// @DnDParent : 0ADAB37D
-	/// @DnDArgument : "soundid" "snd_shoot"
-	/// @DnDSaveInfo : "soundid" "snd_shoot"
-	audio_play_sound(snd_shoot, 0, 0);
+	/// @DnDArgument : "soundid" "snd_enemy_shoot"
+	/// @DnDSaveInfo : "soundid" "snd_enemy_shoot"
+	audio_play_sound(snd_enemy_shoot, 0, 0);
 
 	/// @DnDAction : YoYo Games.Movement.Set_Direction_Point
 	/// @DnDVersion : 1
