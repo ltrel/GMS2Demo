@@ -3,7 +3,7 @@
     "name": "spr_player",
     "path": "sprites/spr_player/spr_player.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,

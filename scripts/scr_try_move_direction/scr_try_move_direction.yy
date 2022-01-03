@@ -6,7 +6,7 @@
     "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "try_move_direction",
+  "name": "scr_try_move_direction",
   "tags": [],
   "resourceType": "GMScript",
 }
