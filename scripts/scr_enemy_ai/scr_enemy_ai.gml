@@ -7,11 +7,11 @@ enum pathfinding_states {
 }
 
 function player_visible() {
-	if(!global.player_alive) {
+	if(!global.player_alive || distance_to_object(obj_player) > 512) {
 		return false;
 	}
-	var wall_1_hit = collision_line(x, y, player.x, player.y, obj_wall_1, false, true);
-	var wall_2_hit = collision_line(x, y, player.x, player.y, obj_wall_2, false, true);
+	var wall_1_hit = collision_line(x, y, player.x, player.y, obj_wall_1, true, true);
+	var wall_2_hit = collision_line(x, y, player.x, player.y, obj_wall_2, true, true);
 	var door_hit = collision_line(x, y, player.x, player.y, obj_door, false, true);
 	var closed_door_hit = door_hit && (!door_hit.is_open);
 	return !wall_1_hit && !wall_2_hit && !closed_door_hit;

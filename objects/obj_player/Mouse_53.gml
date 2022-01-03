@@ -39,15 +39,13 @@ if(can_shoot)
 	/// @DnDVersion : 1
 	/// @DnDHash : 015FB1CC
 	/// @DnDParent : 51B05E81
-	/// @DnDArgument : "xpos" "dcos(mouse_direction) * 20"
 	/// @DnDArgument : "xpos_relative" "1"
-	/// @DnDArgument : "ypos" "-dsin(mouse_direction) * 20"
 	/// @DnDArgument : "ypos_relative" "1"
 	/// @DnDArgument : "var" "bullet"
 	/// @DnDArgument : "var_temp" "1"
 	/// @DnDArgument : "objectid" "obj_bullet"
 	/// @DnDSaveInfo : "objectid" "obj_bullet"
-	var bullet = instance_create_layer(x + dcos(mouse_direction) * 20, y + -dsin(mouse_direction) * 20, "Instances", obj_bullet);
+	var bullet = instance_create_layer(x + 0, y + 0, "Instances", obj_bullet);
 
 	/// @DnDAction : YoYo Games.Common.Apply_To
 	/// @DnDVersion : 1
