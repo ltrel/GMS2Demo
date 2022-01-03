@@ -55,6 +55,16 @@ if(can_shoot)
 	/// @DnDApplyTo : bullet
 	/// @DnDParent : 51B05E81
 	with(bullet) {
+		/// @DnDAction : YoYo Games.Instances.Set_Sprite
+		/// @DnDVersion : 1
+		/// @DnDHash : 78C9C33A
+		/// @DnDParent : 2DD55FE6
+		/// @DnDArgument : "imageind" "1"
+		/// @DnDArgument : "spriteind" "spr_bullet"
+		/// @DnDSaveInfo : "spriteind" "spr_bullet"
+		sprite_index = spr_bullet;
+		image_index = 1;
+	
 		/// @DnDAction : YoYo Games.Movement.Set_Direction_Free
 		/// @DnDVersion : 1
 		/// @DnDHash : 75EA8B9C

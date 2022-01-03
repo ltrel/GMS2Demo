@@ -7,6 +7,9 @@ enum pathfinding_states {
 }
 
 function player_visible() {
+	if(!global.player_alive) {
+		return false;
+	}
 	return !collision_line(x, y, player.x, player.y, obj_wall, false, true);
 }
 

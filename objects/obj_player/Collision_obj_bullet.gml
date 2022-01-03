@@ -18,9 +18,11 @@ if(!(other.from_player))
 	/// @DnDParent : 59DBF7B8
 	with(other) instance_destroy();
 
-	/// @DnDAction : YoYo Games.Rooms.Restart_Room
+	/// @DnDAction : YoYo Games.Common.Set_Global
 	/// @DnDVersion : 1
-	/// @DnDHash : 6C8262DC
+	/// @DnDHash : 0386E896
 	/// @DnDParent : 59DBF7B8
-	room_restart();
+	/// @DnDArgument : "value" "false"
+	/// @DnDArgument : "var" "player_alive"
+	global.player_alive = false;
 }

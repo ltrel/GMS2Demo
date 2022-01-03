@@ -61,6 +61,15 @@ if(can_shoot && player_visible())
 	/// @DnDApplyTo : bullet
 	/// @DnDParent : 0ADAB37D
 	with(bullet) {
+		/// @DnDAction : YoYo Games.Instances.Set_Sprite
+		/// @DnDVersion : 1
+		/// @DnDHash : 0D50DC3B
+		/// @DnDParent : 33CB8D44
+		/// @DnDArgument : "spriteind" "spr_bullet"
+		/// @DnDSaveInfo : "spriteind" "spr_bullet"
+		sprite_index = spr_bullet;
+		image_index = 0;
+	
 		/// @DnDAction : YoYo Games.Movement.Set_Direction_Free
 		/// @DnDVersion : 1
 		/// @DnDHash : 4121CF51

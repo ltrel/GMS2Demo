@@ -8,3 +8,5 @@ var columns = room_width / cell_size;
 var rows = room_height / cell_size;
 global.grid = mp_grid_create(0, 0, columns, rows, cell_size, cell_size);
 mp_grid_add_instances(global.grid, obj_wall, true);
+
+global.player_alive = true;
