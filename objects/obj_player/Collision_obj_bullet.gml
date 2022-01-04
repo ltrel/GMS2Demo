@@ -1,9 +1,8 @@
 /// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
 /// @DnDHash : 59DBF7B8
-/// @DnDArgument : "expr" "other.from_player"
-/// @DnDArgument : "not" "1"
-if(!(other.from_player))
+/// @DnDArgument : "expr" "!other.from_player && !is_dashing && !is_invincible"
+if(!other.from_player && !is_dashing && !is_invincible)
 {
 	/// @DnDAction : YoYo Games.Instances.Destroy_Instance
 	/// @DnDVersion : 1

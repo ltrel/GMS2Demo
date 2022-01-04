@@ -1,9 +1,8 @@
 /// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
 /// @DnDHash : 4C2A9AAE
-/// @DnDArgument : "expr" "global.player_alive"
-/// @DnDArgument : "not" "1"
-if(!(global.player_alive))
+/// @DnDArgument : "expr" "!global.player_alive || global.game_won"
+if(!global.player_alive || global.game_won)
 {
 	/// @DnDAction : YoYo Games.Rooms.Restart_Room
 	/// @DnDVersion : 1
