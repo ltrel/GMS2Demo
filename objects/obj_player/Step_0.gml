@@ -1,8 +1,9 @@
 /// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
 /// @DnDHash : 71C3ED66
-/// @DnDArgument : "expr" "x < 335"
-if(x < 335)
+/// @DnDComment : Level 1 End Trigger
+/// @DnDArgument : "expr" "x < 335 && room == rm_level1"
+if(x < 335 && room == rm_level1)
 {
 	/// @DnDAction : YoYo Games.Instances.If_Instance_Exists
 	/// @DnDVersion : 1
@@ -20,8 +21,8 @@ if(x < 335)
 		/// @DnDHash : 79B16506
 		/// @DnDParent : 47EC8613
 		/// @DnDArgument : "value" "true"
-		/// @DnDArgument : "var" "game_won"
-		global.game_won = true;
+		/// @DnDArgument : "var" "room_won"
+		global.room_won = true;
 	
 		/// @DnDAction : YoYo Games.Instances.Destroy_Instance
 		/// @DnDVersion : 1
